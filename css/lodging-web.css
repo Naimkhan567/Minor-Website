@@ -1,0 +1,345 @@
+
+
+
+
+@import url('http://fonts.cdnfonts.com/css/circular-std-book');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: big bear;
+    src: url(../font/Big\ Black\ Bear.otf);
+}
+
+
+@font-face {
+    font-family: gilroy bold;
+    src: url(../font/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: gilroy light;
+    src: url(../font/Gilroy-Light.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    background-color: #fbc108;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar .navbar-brand svg {
+    display: inline-block;
+}
+
+.navbar .navbar-brand span {
+    font-family: big bear;
+    font-size: 1.2rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding: 0 1rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #000;
+}
+
+
+
+
+
+
+
+.lodging-head {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 7rem;
+    overflow-x: hidden;
+}
+
+.lodging-head .row {
+    padding: 0 !important;
+}
+
+.lodging-head .head h1 {
+    font-family: gilroy bold;
+    font-size: 2rem;
+    color: #000;
+}
+
+.lodging-head .head p{
+    font-family: gilroy bold;
+    font-size: 1.4rem;
+    color: #8c8c8c;
+}
+
+.lodging-head .head-btn  {
+    max-width: 90%;
+    box-shadow: 2px 2px 5px 2px #8c8c8c;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.lodging-head .head-btn a{
+    margin: 0 auto;
+    display: block;
+    margin: .5rem;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #929191;
+    font-size: 1rem;
+    border-right: 1px solid #626262;
+}
+
+.lodging-head .head-btn a:last-child {
+    border: none;
+}
+
+.lodging-head .bar {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-top: 2rem;
+}
+
+
+.lodging-menu {
+    max-width: 100%;
+    margin: 3rem 2rem;
+    overflow-x: hidden;
+}
+
+.lodging-menu .menu-btn {
+    max-width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.lodging-menu .menu-btn button {
+    background-color: #ffffff;
+    border: none;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: .5rem 0;
+}
+
+.lodging-menu .menu-btn button.active {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.lodging-menu .menu-body {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.lodging-menu .menu-body .pod {
+    max-width: 18rem;
+    margin: 2rem auto;
+    min-height: 27rem;
+    box-shadow: 5px 10px 15px #868686;
+    border-radius: 1rem;
+}
+
+.lodging-menu .menu-body .pod img {
+    max-width: 18rem;
+    height: 20rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.lodging-menu .menu-body .pod .body {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.lodging-menu .menu-body .pod .body h2{
+    font-family: gilroy bold;
+    font-size: .9rem;
+    color: #000;
+}
+
+.lodging-menu .menu-body .pod .body h5{
+    font-family: gilroy light;
+    font-size: .7rem;
+    color: #000;
+}
+
+.lodging-menu .menu-body .pod .body .price-place {
+    display: inline-block;
+}
+
+.lodging-menu .menu-body .pod .body .price{
+    font-family: gilroy bold;
+    font-size: .7rem;
+    color: #000;
+    display: inline-block;
+}
+
+.lodging-menu .menu-body .pod .body .price span{
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: .5rem;
+    color: #868686;
+}
+
+.lodging-menu .menu-body .pod .body .place{
+    margin-left: .2rem;
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: .7rem;
+    color: #868686;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 1290px) {
+    .lodging-menu .menu-body {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    .lodging-menu .menu-body {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .lodging-menu .menu-btn {
+        max-width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .lodging-menu .menu-body {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .lodging-menu .menu-btn {
+        max-width: 80%;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .lodging-menu .menu-btn button {
+        margin: 1rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 675px) {
+    .lodging-menu {
+        margin: 3rem .5rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 620px) {
+    .lodging-menu .menu-body {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 604px) {
+
+    .lodging-menu {
+        margin: 3rem 0;
+        padding-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 554px) {
+
+    .lodging-menu {
+        padding: 0 1rem;
+    }
+    .lodging-menu .menu-body {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 508px) {
+    .lodging-head .row {
+        width: 97%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .lodging-menu .menu-btn button {
+        margin: 1rem 0;
+        padding: 1rem .8rem;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .lodging-head .head-btn a{
+        margin: 0 auto;
+        display: block;
+        margin: .5rem;
+        padding-left: .3rem;
+        color: #929191;
+        font-size: 1rem;
+        border-right: 1px solid #626262;
+    }
+
+    .lodging-head .head-btn  {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .lodging-menu .menu-body .pod {
+        max-width: 16rem;
+        margin: 2rem auto;
+        min-height: 25rem;
+    }
+    
+    .lodging-menu .menu-body .pod img {
+        max-width: 16rem;
+        height: auto;
+    }
+}

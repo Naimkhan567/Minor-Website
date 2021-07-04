@@ -1,0 +1,1684 @@
+
+@import url(./lodging-web.css);
+@import url(./lodging.css);
+@import url(./tip-list.css);
+
+
+@import url('http://fonts.cdnfonts.com/css/circular-std-book');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: big bear;
+    src: url(../font/Big\ Black\ Bear.otf);
+}
+
+
+@font-face {
+    font-family: gilroy bold;
+    src: url(../font/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: gilroy light;
+    src: url(../font/Gilroy-Light.otf);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 111;
+    width: 100%;
+}
+
+.navbar-scrolled {
+   box-shadow: 1px 2px 7px #fbc108;
+}
+
+.navbar .navbar-brand span {
+    font-family: big bear;
+    font-size: 1.2rem;
+    color: #fbc108;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding: 0 1.4rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #959595;
+    font-size: 1rem;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #fbc108;
+}
+
+.navbar .navbar-nav .nav-link span {
+    font-size: .6rem;
+    padding: 0 .1rem;
+}
+
+.navbar .login-signup {
+    display: flex;
+    text-align: center;
+    margin-left: 1.3rem;
+    margin-right: 1.4rem;
+}
+
+.navbar .login-signup .img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #959595;
+    margin: auto;
+}
+
+.navbar .login-signup .text {
+    margin-left: .7rem;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #959595;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1366px) {
+    .navbar .login-signup {
+        margin-left: 1rem;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding: 0 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .navbar .login-signup {
+        margin-left: .7rem;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .navbar .login-signup {
+        margin-left: 0.5rem;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding: 0 .8rem;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .navbar .login-signup {
+        margin-left: 0.5rem;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding: 0 .5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.showcase1 {
+    background-image: url(../img/showcase1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 46rem;
+    height: 100%;
+    position: relative;
+}
+
+.showcase1 .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.showcase1 .text h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.showcase1 .text h4 {
+    color: #fbc108;
+    font-size: 2rem;
+}
+
+.showcase1 .text .get-it {
+    margin-top: 5rem;
+}
+
+.showcase1 .text .get-it p {
+    color: #fbc108;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 970px) {
+    .showcase1 {
+        padding-top: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .showcase1 .text h1 {
+        font-size: 4rem;
+        color: #ffffff;
+    }
+    
+    .showcase1 .text h4 {
+        color: #fbc108;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.showcase-bar {
+    position: relative;
+}
+
+.showcase-bar .bar {
+    max-width: 25%;
+    background-color: #fbc108;
+    height: .5rem;
+}
+
+.showcase-bar .all-item {
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    right: 0;
+    max-width: 75%;
+    margin: 0 auto;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 5px 1px #959595;
+    background-color: #ffffff;
+}
+
+.showcase-bar .all-item .all-items-pad {
+    padding: 2rem 1rem;
+}
+
+.showcase-bar .all-item a {
+    display: inline-block;
+    text-align: center;
+    margin: auto 1rem;
+}
+
+.showcase-bar .all-item .text-img a div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase-bar .all-item p {
+    font-family: gilroy bold;
+    font-size: 1rem;
+    padding-left: 1rem;
+    margin: auto 0;
+    color: #000;
+}
+
+.showcase-bar .all-btn {
+    margin-top: 1rem;
+}
+
+.showcase-bar .all-btn div {
+    padding: .5rem .5rem;
+    border: 1px solid #959595;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 1rem;
+}
+
+.showcase-bar .all-btn div.active {
+    background-color: #fbc108;
+
+}
+
+.showcase-bar .all-btn div.active a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.showcase-bar .all-btn a {
+    font-family: gilroy bold;
+    font-size: 1rem;
+    padding: .5rem;
+    color: #000;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 988px) {
+    .showcase-bar .all-item {
+        position: absolute;
+        top: -5rem;
+        left: 0;
+        right: 0;
+        max-width: 85%;
+        margin: 0 auto;
+        border-radius: .5rem;
+        box-shadow: 1px 1px 5px 1px #959595;
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 872px) {
+    .showcase-bar .all-item .text-img a div{
+        display: block;
+        text-align: center;
+    }
+
+    .showcase-bar .all-btn div {
+        padding: .5rem .5rem;
+        margin: 0 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+    .showcase-bar .all-item {
+        position: absolute;
+        top: -5rem;
+        left: 0;
+        right: 0;
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: .5rem;
+        box-shadow: 1px 1px 5px 1px #959595;
+        background-color: #ffffff;
+    }
+
+    .showcase-bar .all-btn {
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+        margin-right: .7rem;
+    }
+
+    .showcase-bar .all-btn div {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 522px) {
+    .showcase-bar .all-item .text-img {
+        display: grid !important;
+        grid-template-columns: auto auto;
+
+    }
+
+    .showcase-bar .all-item .text-img a {
+        display: block;
+        margin-bottom: .5rem;
+    }
+    
+}
+
+@media screen and (max-width: 446px) {
+    .showcase-bar .all-btn {
+        display: grid !important;
+        grid-template-columns: auto auto;
+        margin-right: .7rem;
+    }
+}
+
+@media screen and (max-width: 338px) {
+    .showcase-bar .all-btn div {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.checkout-show {
+    width: 90%;
+    margin: 15rem auto;
+    margin-bottom: 5rem;
+}
+
+.checkout-show .contain {
+    margin: auto 0;
+    background-image: url(../img/checkout.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 40rem;
+}
+
+.checkout-show .contain .head {
+    padding: 0 2rem;
+    padding-top: 5rem;
+    position: relative;
+}
+
+
+.checkout-show .contain .head .logo {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.checkout-show .contain .head .logo p {
+    font-family: big bear;
+    color: #ffffff;
+    font-size: .6rem;
+}
+
+.checkout-show .contain .head h1 {
+    font-family: gilroy light;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.checkout-show .contain .foot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.checkout-show .contain .foot a {
+    position: absolute;
+    top: 12rem;
+    right: 5%;
+    display: block;
+    background-color: #fbc108;
+    padding: 1.5rem 5rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    color: #000;
+    font-family: gilroy bold;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1380px){
+    .checkout-show .contain .head {
+        padding: 0 2rem;
+        padding-top: 7rem;
+        position: relative;
+    }
+
+    .checkout-show .contain .foot a {
+        position: absolute;
+        top: 9rem;
+        right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 1196px){
+    .checkout-show .contain .head {
+        padding: 0 2rem;
+        padding-top: 9rem;
+        position: relative;
+    }
+
+    .checkout-show .contain .foot a {
+        position: absolute;
+        top: 5rem;
+        right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 1050px){
+    .checkout-show .contain .head {
+        padding: 0 2rem;
+        padding-top: 11rem;
+        position: relative;
+    }
+
+    .checkout-show .contain .head h1 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    .checkout-show .contain .foot a {
+        position: absolute;
+        top: 6rem;
+        right: 5%;
+        padding: 1rem 3rem;
+    }
+
+    .checkout-show {
+        width: 90%;
+        margin: 10rem auto;
+        margin-bottom: 0rem;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .checkout-show .contain .head {
+        padding: 0 1rem;
+        padding-top: 12rem;
+        position: relative;
+    }
+
+    .checkout-show .contain .head h1 {
+        font-size: 1.8rem;
+        color: #ffffff;
+    }
+
+    .checkout-show .contain .foot a {
+        position: absolute;
+        top: 6rem;
+        right: 5%;
+        padding: .5rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .checkout-show .contain .head {
+        padding: 0 1rem;
+        padding-top: 13rem;
+        position: relative;
+    }
+
+    .checkout-show .contain .head h1 {
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+
+    .checkout-show .contain .foot a {
+        position: absolute;
+        top: 4rem;
+        right: 5%;
+        padding: .5rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .checkout-show .contain .head {
+        padding: 0 1rem;
+        padding-top: 14.5rem;
+        position: relative;
+    }
+
+    .checkout-show .contain .foot a {
+        position: absolute;
+        top: 1.5rem;
+        right: 5%;
+        padding: .5rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .checkout-show {
+        width: 90%;
+        height: 30rem;
+        margin: 15rem auto;
+        margin-bottom: 0rem;
+    }
+
+    .checkout-show .contain .head {
+        padding: 0 1rem;
+        padding-top: 15rem;
+        position: relative;
+    }
+
+    .checkout-show .contain .head h1 {
+        font-size: 1.2rem;
+        color: #ffffff;
+    }
+
+    .checkout-show .contain .foot a {
+        position: absolute;
+        top: .5rem;
+        right: 5%;
+        padding: .5rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .checkout-show .contain .head {
+        padding: 0 1rem;
+        padding-top: 7rem;
+        position: relative;
+    }
+
+    .checkout-show .contain .head .text {
+        margin-left: 1rem;
+    }
+
+    .checkout-show .contain .head .text h1 {
+        word-break: break-all;
+    }
+    .checkout-show .contain .foot a {
+        position: absolute;
+        top: 0rem;
+        right: 5%;
+        padding: .5rem 2rem;
+        font-size: 1rem;
+    }
+
+    .checkout-show {
+        width: 90%;
+        margin: 33rem auto;
+        margin-bottom: 0rem;
+    }
+
+    .checkout-show .contain {
+        margin: auto 0;
+        background-image: url(../img/checkout.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 20rem;
+    }
+} 
+
+
+
+
+
+
+
+
+.trip-package {
+    width: 100%;
+    margin-left: auto;
+    overflow-x: hidden;
+    margin: 5rem 0;
+
+}
+
+.trip-package-container {
+    position: relative;
+}
+
+.trip-package .trip-package-text {
+    margin-left: 5rem;
+}
+
+.trip-package .text .head h1 {
+    font-family: gilroy bold;
+    font-size: 3rem;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.trip-package .text .head h5 {
+    font-family: gilroy bold;
+    font-size: 2rem;
+    color: #919090;
+}
+
+.trip-package .text .head-btn {
+    margin-top: auto;
+}
+
+.trip-package .text .head-btn a {
+    display: block;
+    padding: .8rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 2px #919090;
+    font-family: gilroy bold;
+    font-size: 1.5rem;
+    color: #000;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.trip-package .carousel {
+    margin-top: 2rem ;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.trip-package .carousel .item {
+    background-image: url(../img/carousel1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 283px;
+    height: 360px !important;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+    box-shadow: 5px 10px 15px #959595;
+    border-radius: 2rem;
+}
+
+.trip-package .carousel .item .text-icon {
+    margin: 0 auto;
+}
+
+.trip-package .carousel .item .text-icon .text {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.trip-package .carousel .item .text-icon .text h4 {
+    font-family: gilroy light;
+    font-size: .7rem;
+    color: #ffffff;
+}
+
+.trip-package .carousel .item .text-icon .text h4 span {
+    font-family: gilroy bold;
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+.trip-package .carousel .item .text-icon .text h2 {
+    position: absolute;
+    bottom: 0;
+    font-family: gilroy bold;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.trip-package .carousel .item .text-icon .icon {
+    background-color: #313133;
+    margin-right: 1.8rem;
+    padding-top: .4rem;
+    text-align: center;
+}
+
+.trip-package .carousel .item .text-icon .icon p {
+    font-family: gilroy light;
+    font-size: .6rem;
+    color: #ffffff;
+}
+
+.trip-package .carousel .item .text-icon .icon a {
+    display: block;
+    margin: 0 .5rem;
+}
+
+.trip-package .carousel .item .text-icon .icon div{
+    margin: 1rem 0;
+}
+
+.trip-package .carousel .item .text-icon .icon .more a {
+    font-family: gilroy light;
+    font-size: .6rem;
+    color: #ffffff;
+}
+
+.trip-package .carousel .item .from {
+    font-family: gilroy light;
+    font-size: .9rem;
+    padding-left: 1rem;
+    color: #ffffff;
+}
+
+
+.trip-package .carousel .item .foot {
+    margin-top: 1.5rem;
+    text-align: right;
+    margin-right: 1.8rem;
+}
+
+.trip-package .carousel .item .foot a {
+    display: inline-block;
+
+}
+
+.trip-package .carousel {
+    position: relative;
+}
+
+.trip-package .carousel .owl-nav {
+    position: absolute;
+    top: 40%;
+    left: -2.5rem;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.trip-package .carousel .owl-nav button {
+    display: flex;
+    justify-content: space-between;
+    width: 3.9rem;
+    height: 3.9rem;
+    border-radius: 50% !important;
+    background-color: #fbc108;
+    position: relative;
+}
+
+.trip-package .carousel .owl-nav button span {
+    position: absolute;
+    top: -.5rem;
+    font-size: 2.7rem;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.trip-package .carousel .owl-nav button span:hover {
+    color: #fbc108;
+}
+
+@media screen and (max-width: 1050px) {
+    .trip-package {
+        width: 100%;
+        margin-left: auto;
+        overflow-x: hidden;
+        margin: 5rem 0;
+        margin-top: 0;
+    
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .trip-package .text .head h1{
+        font-size: 2rem;
+        color: #000;
+    }
+
+    .trip-package .text .head h5 {
+        font-size: 1.5rem;
+        color: #919090;
+    }
+
+    .trip-package .text .head-btn a {
+        display: block;
+        padding: .8rem 2rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 5px 2px #919090;
+        font-size: 1.2rem;
+        color: #000;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 906px) {
+    .trip-package .text .head h1{
+        font-size: 2.2rem;
+        color: #000;
+    }
+
+    .trip-package .text .head h5 {
+        font-size: 1.7rem;
+        color: #919090;
+    }
+
+   
+}
+
+@media screen and (max-width: 806px) {
+    .trip-package .trip-package-text {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .trip-package .carousel .owl-nav {
+        position: absolute;
+        top: 40%;
+        left: -1.2rem;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .trip-package .text .head h1{
+        font-size: 1.8rem;
+        color: #000;
+    }
+
+    .trip-package .text .head h5 {
+        font-size: 1.2rem;
+        color: #919090;
+    }
+
+    .trip-package .text{
+        display: block !important;
+    }
+
+    .trip-package .text a{
+        text-align: center;
+        width: 10rem;
+        margin-top: 2rem;
+    }
+
+    .trip-package .carousel {
+        margin-top: 2rem;
+        position: static;
+    }
+
+    .trip-package .carousel .owl-nav {
+        position: absolute;
+        top: 40%;
+        left: 0rem;
+        width: 100%;
+    }
+
+    .trip-package .carousel .item {
+        background-image: url(../img/carousel1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 80%;
+        margin: 0 auto;
+        height: 400px !important;
+        width: 100%;
+        border-radius: 2rem;
+    }
+    .trip-package .carousel .item .text-icon {
+        margin: 0 auto;
+        height: 75%;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.book-vally {
+    width: 95%;
+    margin: 5rem auto;
+    box-shadow: 2px 2px 15px #959595;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.book-vally .row .left {
+    padding: 3rem 0 0 3rem;
+}
+
+.book-vally .row .head h1 {
+    font-family: gilroy bold;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.book-vally .row .head p {
+    font-family: gilroy bold;
+    font-size: 1.7rem;
+    color: #000;
+}
+
+.book-vally .row .foot {
+    text-align: center;
+    position: relative;
+}
+
+.book-vally .row .foot a {
+    position: absolute;
+    top: 10rem;
+    display: block;
+    background-color: #fbc108;
+    width: 80%;
+    font-family: gilroy bold;
+    color: #000;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.book-vally .row .carousel {
+    min-width: 100%;
+    height: 30rem;
+    margin: 0 auto;
+}
+
+
+.book-vally .row .carousel .carousel-inner img {
+    height: 30rem;
+}
+
+.book-vally .row .carousel .carousel-indicators{
+    position: absolute;
+    bottom: 2rem;
+    margin-bottom: 0 !important;
+}
+
+.book-vally .row .carousel .carousel-indicators button {
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+}
+
+.book-vally .row .carousel .carousel-indicators button.active {
+    background-color: #fbc108;
+}
+
+
+
+
+@media screen and (max-width: 1346px) {
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 10rem;
+        display: block;
+        background-color: #fbc108;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1306px) {
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 7rem;
+        display: block;
+        background-color: #fbc108;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1174px) {
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 7rem;
+        display: block;
+        background-color: #fbc108;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1112px) {
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 5rem;
+        display: block;
+        background-color: #fbc108;
+        width: 90%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1070px) {
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 4rem;
+        display: block;
+        background-color: #fbc108;
+        width: 90%;
+        color: #000;
+    }
+}
+
+
+@media screen and (max-width: 1034px) {
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 9rem;
+        display: block;
+        background-color: #fbc108;
+        width: 90%;
+        color: #000;
+    }
+
+    .book-vally .row .head h1 {
+        font-size: 2rem;
+        color: #000;
+    }
+    
+    .book-vally .row .head p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 7rem;
+        display: block;
+        background-color: #fbc108;
+        width: 90%;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 6rem;
+        display: block;
+        background-color: #fbc108;
+        width: 90%;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .book-vally .row .foot a {
+        position: absolute;
+        top: 4rem;
+    }
+
+    .book-vally .row .left {
+        padding: 2rem 0  0 2rem;
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .book-vally .row .head h1 {
+        font-size: 1.8rem;
+        color: #000;
+    }
+    
+    .book-vally .row .head p {
+        font-size: 1.2rem;
+        color: #919090;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.everywhere .text-btn {
+    margin-bottom: 4rem;
+}
+
+.everywhere .text-btn .head {
+    margin-left: 2.5rem;
+}
+
+.everywhere .text-btn .head h1 {
+    font-family: gilroy bold;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.everywhere .text-btn .head p {
+    font-family: gilroy bold;
+    font-size: 1.8rem;
+    color: #959595;
+}
+
+.everywhere .text-btn .live-btn {
+    text-align: center;
+    position: relative;
+}
+
+.everywhere .text-btn .live-btn a {
+    position: absolute;
+    top: -5rem;
+    right: 3rem;
+    display: block;
+    width: 12%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-family: gilroy bold;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 2px 2px 5px 2px #959595;
+}
+
+
+
+.everywhere .owl-carousel .item .body {
+    margin-top: .5rem;
+    margin-left: 1rem;
+}
+
+.everywhere .owl-carousel .item .body h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1rem;
+}
+
+.everywhere .owl-carousel .item .body p {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #959595;
+    font-size: .6rem;
+}
+
+.everywhere .owl-carousel .item .foot {
+    margin-left: 1rem;
+}
+
+.everywhere .owl-carousel .item .foot p {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #c0bbbb;
+    font-size: .6rem;
+}
+
+.everywhere .owl-carousel .item .foot h4 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1rem;
+    line-height: .1;
+}
+
+.everywhere .owl-carousel {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.everywhere{
+    position: relative;
+    margin: 5rem 0;
+    overflow-x: hidden;
+}
+
+.everywhere .owl-carousel .owl-nav {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 105%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.everywhere .owl-carousel .owl-nav button {
+    position: relative;
+}
+
+.everywhere .owl-carousel .owl-nav button span {
+    font-size: 3rem;
+    font-family: gilroy bold;
+    font-weight: bolder;
+}
+
+.everywhere .owl-carousel .owl-nav button:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+
+@media screen and (max-width: 1284px){
+    .everywhere .text-btn .live-btn a {
+        position: absolute;
+        top: -7rem;
+        right: 3rem;
+        display: block;
+        width: 15%;
+        margin: 0 auto;
+        box-shadow: 2px 2px 5px 2px #959595;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .everywhere .text-btn .live-btn a {
+        position: absolute;
+        top: -7rem;
+        right: 4rem;
+        display: block;
+        width: 17%;
+        margin: 0 auto;
+        box-shadow: 2px 2px 5px 2px #959595;
+    }
+}
+
+@media screen and (max-width: 996px){
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 22%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 906px) {
+    .everywhere .text-btn .head h1 {
+        font-size: 2.2rem;
+        color: #000;
+    }
+    
+    .everywhere .text-btn .head p {
+        font-size: 1.5rem;
+        color: #959595;
+    }
+
+    .everywhere .text-btn .live-btn a {
+        position: absolute;
+        top: -7rem;
+        right: 4rem;
+        display: block;
+        width: 20%;
+        margin: 0 auto;
+        box-shadow: 2px 2px 5px 2px #959595;
+    }
+
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        width: 107%;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        width: 107%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .everywhere .text-btn .head h1 {
+        font-size: 2.2rem;
+        color: #000;
+    }
+    
+    .everywhere .text-btn .head p {
+        font-size: 1.5rem;
+        color: #959595;
+    }
+
+    .everywhere .text-btn .live-btn a {
+        position: absolute;
+        top: -7rem;
+        right: 4rem;
+        display: block;
+        width: 25%;
+        margin: 0 auto;
+        box-shadow: 2px 2px 5px 2px #959595;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        width: 107%;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    .everywhere .text-btn .live-btn a {
+        position: absolute;
+        top: -7rem;
+        right: 4rem;
+        display: block;
+        width: 25%;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        box-shadow: 2px 2px 5px 2px #959595;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 31%;
+        left: 50%;
+        width: 110%;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .everywhere .text-btn .live-btn a {
+        position: absolute;
+        top: -7rem;
+        right: 4rem;
+        display: block;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 478px){
+    .everywhere .text-btn .head h1 {
+        font-size: 1.8rem;
+        color: #000;
+    }
+    
+    .everywhere .text-btn .head p {
+        font-size: 1.2rem;
+        color: #959595;
+    }
+
+    .everywhere .text-btn .live-btn a {
+        position: static;
+        margin-left: 2.6rem;
+        display: block;
+        width: 37%;
+    }
+
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 111%;
+    }
+}
+
+
+@media screen and (max-width: 410px) {
+    .everywhere .owl-carousel {
+        width: 85%;
+        margin: 0 auto;
+        
+    }
+
+
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        width: 113%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .everywhere .owl-carousel {
+        width: 75%;
+        margin: 0 auto;
+        
+    }
+
+
+    .everywhere .owl-carousel .owl-nav {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        width: 120%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.atrraction {
+    margin: 7rem 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.atrraction .text-btn {
+    margin: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.atrraction .text-btn .text h1 {
+    font-family: gilroy bold;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.atrraction .text-btn .text p {
+    font-family: gilroy bold;
+    font-size: 1.8rem;
+    color: #959595;
+}
+
+.atrraction .text-btn .btn a {
+    margin: 0 auto;
+    padding: 1.2rem 2.5rem;
+    border-radius: 1rem;
+    font-family: gilroy bold;
+    font-size: 1.6rem;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 2px 2px 5px 2px #959595;
+}
+
+.atrraction .thrillers-carousel .item img {
+    max-width: 15rem;
+}
+
+
+.atrraction .thrillers-carousel .item .head h1 {
+    font-family: gilroy bold;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.atrraction .thrillers-carousel .item .body p {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #c0bbbb;
+    font-size: .6rem;
+}
+
+.atrraction .thrillers-carousel .item .body h4 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1rem;
+    line-height: .1;
+}
+
+.atrraction .thrillers-carousel .item .foot {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #c0bbbb;
+    padding-top: .2rem;
+    font-size: .5rem;
+}
+
+.atrraction .thrillers-carousel .owl-carousel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.atrraction .thrillers-carousel .owl-carousel .owl-nav {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 107%;
+}
+
+.atrraction .thrillers-carousel .owl-carousel .item-pad {
+    margin-top: 1rem;
+}
+
+.atrraction .thrillers-carousel .owl-carousel .owl-nav button span {
+    font-size: 3rem;
+    font-family: gilroy bold;
+    font-weight: bolder;
+}
+
+.atrraction .thrillers-carousel .owl-carousel .owl-nav button:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.footer{
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer svg {
+    max-width: 646px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 906px) {
+    .atrraction .text-btn .text h1 {
+        font-size: 2.2rem;
+        color: #000;
+    }
+    
+    .atrraction .text-btn .text p {
+        font-size: 1.7rem;
+        color: #959595;
+    }
+    
+    .atrraction .text-btn .btn a {
+        margin: 0 auto;
+        padding: 1.2rem 2.5rem;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        background-color: #ffffff;
+        color: #000;
+        box-shadow: 2px 2px 5px 2px #959595;
+    }
+}
+
+@media screen and (max-width: 686px) {
+    .atrraction .thrillers-carousel .owl-carousel .owl-nav {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 110%;
+    }
+}
+
+@media screen and (max-width: 657px) {
+    .atrraction .text-btn .btn a {
+        margin: 0 auto;
+        padding: 1.2rem 2.5rem;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .atrraction .thrillers-carousel .item img {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .atrraction .thrillers-carousel .item .item-pad {
+       width: 50%;
+       margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 586px){
+    .atrraction .text-btn {
+        display: grid !important;
+        grid-template-columns: auto auto;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .atrraction .text-btn a {
+        max-width: 32%;
+        
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .atrraction .text-btn {
+        display:  block !important;
+        max-width: 80% !important;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .atrraction .text-btn .text h1 {
+        font-size: 1.8rem;
+        color: #000;
+    }
+    
+    .atrraction .text-btn .text p {
+        font-size: 1.2rem;
+        color: #959595;
+    }
+}

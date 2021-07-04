@@ -1,0 +1,688 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std-book');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: big bear;
+    src: url(../font/Big\ Black\ Bear.otf);
+}
+
+
+@font-face {
+    font-family: gilroy bold;
+    src: url(../font/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: gilroy light;
+    src: url(../font/Gilroy-Light.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=date]::-webkit-datetime-edit-text {
+    color: #d8d8d8;
+    padding-left: .5rem;
+}
+
+input[type=date]::-webkit-datetime-edit-month-field {
+    color: #d8d8d8;
+    padding-left: .5rem;
+}
+
+input[type=date]::-webkit-datetime-edit-day-field {
+    color: #d8d8d8;
+}
+
+input[type=date]::-webkit-datetime-edit-year-field {
+    color: #d8d8d8;
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+    background-color: #fbc108;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 111;
+}
+
+.navbar .navbar-brand svg {
+    display: inline-block;
+}
+
+.navbar .navbar-brand span {
+    font-family: big bear;
+    font-size: 1.2rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding: 0 1rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #000;
+}
+
+
+.showcase {
+    margin-top: 4.8rem;
+    margin-left: .8rem;
+}
+
+.showcase-container .owl-height {
+    height: 20rem !important;
+}
+
+
+@media screen and (max-width: 992px) {
+    .showcase-container .owl-stage {
+        height: 12rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .owl-carousel .owl-stage {
+        display: flex;
+      }
+  
+     .owl-carousel .owl-item img {
+        width: 100%;
+        min-height: 15rem !important;
+      }
+}
+
+
+.crosroads {
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+
+.crosroads .about .head h1 {
+    font-family: gilroy bold;
+    color: 2.2rem;
+    color: #000;
+    margin-bottom: 4rem;
+}
+
+.crosroads .about .about-sec {
+    margin-top: 4rem;
+}
+
+
+.crosroads .about .about-sec h2 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.crosroads .about .pkr-form {
+    box-shadow: 2px 2px 5px 2px #707070;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.crosroads .about .pkr-form .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.crosroads .about .pkr-form .head h1 {
+    font-family: gilroy bold;
+    color: 2rem;
+    color: #ffffff;
+    margin: auto 0;
+}
+
+.crosroads .about .pkr-form .head h3 {
+    font-family: gilroy light;
+    color: 1.4rem;
+    color: #ffffff;
+    margin: auto 0;
+}
+
+.crosroads .about .pkr-form .body {
+    margin: 1rem;
+    margin-top: .5rem;
+}
+
+.crosroads .about .pkr-form .body form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+
+.crosroads .about .pkr-form .body form label {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0 .5rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+.crosroads .about .pkr-form .body form input {
+    border: 1px solid #d8d8d8;
+    max-width: 8rem;
+    width: 100%;
+    height: 2rem;
+    margin: 0 .5rem;
+    color: #000;
+    display: block;
+}
+
+.crosroads .about .pkr-form .body form #guests {
+    background-image: url(../img/Polygon\ 1.png);
+    background-position: 5rem .6rem;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 0 1rem;
+}
+
+.crosroads .about .pkr-form .body .book-btn {
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.crosroads .about .pkr-form .body .book-btn button {
+    display: block;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+    background-color: #fbc108;
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+
+
+
+@media screen and (max-width:1448px) {
+    .crosroads .about .pkr-form .body form input {
+        border: 1px solid #d8d8d8;
+        max-width: 7.5rem;
+        width: 100%;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width:1332px) {
+
+    .crosroads .about .pkr-form .body form {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+    }
+
+    .crosroads .about .pkr-form .body {
+        position: relative;
+    }
+
+    .crosroads .about .pkr-form .body .guests {
+        position: absolute;
+        top: 9rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .crosroads .about .pkr-form .body .book-btn {
+        margin-top: 10rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .crosroads .about .pkr-form {
+        margin-top: 5rem;
+    }
+
+    .crosroads .about .pkr-form .body .guests {
+        position: static;
+
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .crosroads .about .pkr-form .body form {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        height: auto;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:462px) {
+    .crosroads .about .pkr-form .body form {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+    }
+
+    .crosroads .about .pkr-form .body .guests {
+        width: 50%;
+        position: absolute;
+        top: 9rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width:315px) {
+    .crosroads .about .pkr-form .body {
+        margin: 0;
+    }
+
+    .crosroads .about .pkr-form .body .book-btn {
+       padding-left: .7rem;
+       padding-right: .7rem;
+    }
+}
+
+
+
+
+
+
+.crosroads .rooms {
+    margin: 2rem 0;
+    margin-top: 5rem;
+}
+
+.crosroads .rooms .left h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.crosroads .rooms .details {
+    border: 1px solid #707070;
+    height: 17rem;
+}
+
+.crosroads .rooms .details div {
+    border: 1px solid #707070;
+    padding: 1rem;
+    height: 7rem;
+}
+
+.crosroads .rooms .details h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #707070;
+    font-size: 1.5rem;
+}
+
+.crosroads .rooms .details p {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.crosroads .facilitites h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.5rem;
+    margin: 5rem 0;
+}
+
+.crosroads .facilitites .left {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.crosroads .facilitites .col-4 {
+    min-width: 13rem;
+    height: 5rem;
+    margin: 1rem;
+    background-color: #c0bebe;
+}
+
+@media screen and (max-width: 743px) {
+    .crosroads .facilitites .col-4 {
+        min-width: 11rem;
+        height: 5rem;
+        margin: 1rem;
+        background-color: #c0bebe;
+    }
+}
+
+@media screen and (max-width: 646px) {
+    .crosroads .facilitites .col-4 {
+        min-width: 10rem;
+        height: 4rem;
+        margin: 1rem;
+        background-color: #c0bebe;
+    }
+}
+
+
+@media screen and (max-width: 606px) {
+    .crosroads .facilitites .col-4 {
+        min-width: 8.5rem;
+        height: 3.5rem;
+        margin: 1rem;
+        background-color: #c0bebe;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .crosroads .facilitites .col-4 {
+        min-width: 7.5rem;
+        height: 3.5rem;
+        margin: 1rem;
+        background-color: #c0bebe;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .crosroads .facilitites .col-4 {
+        min-width: 7.5rem;
+        height: 3.5rem;
+        margin: 1rem;
+        background-color: #c0bebe;
+    }
+
+    .crosroads .facilitites .left {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+
+.crosroads .review {
+    margin: 5rem 0;
+}
+
+.crosroads .review h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+.modal .modal-content {
+    background-color: transparent;
+}
+
+.modal .modal-header {
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.modal .modal-body {
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.modal .modal-title {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+.modal .modal-title p {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: 1.5rem;
+}
+
+.modal .modal-header {
+    border: transparent;
+}
+
+.modal .modal-header button {
+    border: none;
+    background-color: transparent;
+    color: #ef4136;
+    padding-left: 1rem;
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: .9rem;
+}
+
+.modal .modal-body .select-date h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.7rem;
+}
+
+.modal .modal-body .select-date input {
+    width: 100%;
+    background-image: url(../img/Path\ 14.png);
+    background-repeat: no-repeat;
+    background-position: 95% .5rem;
+    padding: .5rem;
+    border: 1px solid #d8d8d8;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: .9rem;
+}
+
+.modal .modal-body .select-date p {
+    margin-top: 2rem;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: .9rem;
+}
+
+.modal .modal-body .numberofpeople {
+    padding: 2rem 0;
+    border-top: 1px solid #868686;
+    border-bottom: 1px solid #868686;
+}
+
+.modal .modal-body .numberofpeople h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: 1.8rem;
+}
+
+.modal .modal-body .numberofroom {
+    margin: 2rem 0;
+}
+
+.modal .modal-body .numberofroom h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: 1.8rem;
+}
+
+.modal .modal-body .numberofroom p {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: 1rem;
+}
+
+.modal .modal-body .numberofroom h4 {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.modal .modal-body form {
+    width: 30rem;
+}
+
+.modal .modal-body .value-button {
+    display: inline-block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+.modal .modal-body .value-button:hover {
+    cursor: pointer;
+}
+
+.modal .modal-body form #decrease,
+.modal .modal-body form #decrease2 {
+    border-radius: 50%;
+}
+
+.modal .modal-body form #increase,
+.modal .modal-body form #increase {
+    border-radius: 50%;
+}
+
+/* form #input-wrap {
+        margin: 0px;
+        padding: 0px;
+      } */
+
+.modal .modal-body input#number,
+.modal .modal-body input#number2 {
+    text-align: center;
+    border: none;
+    margin: 0px;
+    width: 10rem;
+    height: 4rem;
+}
+
+.modal .modal-body input[type=number]::-webkit-inner-spin-button,
+.modal .modal-body input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.modal .footer {
+    background-color: transparent;
+}
+
+.modal .footer .footer-body {
+    width: 20rem;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.modal .footer .footer-body .total p {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.modal .footer .footer-body .total {
+    background-color: #ffffff;
+    padding: .5rem;
+}
+
+.modal .footer .footer-body .total .bar {
+    width: 1px;
+    height: 2rem;
+    background-color: #868686;
+}
+
+.modal .footer .footer-body .total .price {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1rem;
+}
+
+.modal .footer .footer-body .total .price span {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: .5rem;
+    padding-right: .3rem;
+}
+
+.modal .footer .footer-body .footer-next {
+    background-color: #fbc108;
+    position: relative;
+    width: 9rem;
+}
+
+.modal .footer .footer-body .next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .7rem;
+    width: 100%;
+    margin: auto 0;
+    text-align: center;
+}
+
+.modal .footer .footer-body .next p {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #000;
+    font-size: 1rem;
+    margin: auto;
+}
+
+.modal .footer .footer-body .next span {
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+    font-size: .5rem;
+    padding-right: .3rem;
+}
+
+@media screen and (max-width: 576px) {
+    .modal .modal-title {
+        font-family: 'Circular Std Book', sans-serif;
+        color: #000;
+        font-size: 1.5rem;
+    }
+    
+    .modal .modal-title p {
+        font-family: 'Circular Std Book', sans-serif;
+        color: #868686;
+        font-size: 1rem;
+    }
+}
